@@ -1,10 +1,6 @@
 {
     "DESIGN_NAME": "user_project_wrapper",
     "VERILOG_FILES": ["dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/bitbang.v",
-        "dir::../../verilog/rtl/Config.v",
-        "dir::../../verilog/rtl/config_UART.v",
-        "dir::../../verilog/rtl/ConfigFSM.v",
         "dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/eFPGA_top.v",
         "dir::../../verilog/rtl/fabric.v",
@@ -76,7 +72,8 @@
         "Inst_eFPGA_top.Inst_eFPGA.Tile_X3Y7_S_term_single2 vccd1 vssd1 vccd1 vssd1,",
         "Inst_eFPGA_top.Inst_eFPGA.Tile_X4Y7_S_term_single vccd1 vssd1 vccd1 vssd1,",
         "Inst_eFPGA_top.Inst_eFPGA.Tile_X5Y7_S_term_single vccd1 vssd1 vccd1 vssd1,",
-        "Inst_eFPGA_top.Inst_eFPGA.Tile_X6Y7_S_term_single vccd1 vssd1 vccd1 vssd1"
+        "Inst_eFPGA_top.Inst_eFPGA.Tile_X6Y7_S_term_single vccd1 vssd1 vccd1 vssd1,",
+        "Inst_eFPGA_top.Config_inst vccd1 vssd1 vccd1 vssd1"
     ],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "VERILOG_FILES_BLACKBOX": ["dir::../../verilog/rtl/defines.v",
@@ -87,7 +84,8 @@
         "dir::macros/verilog/RegFile_tile.v",
         "dir::macros/verilog/S_term_single2_tile.v",
         "dir::macros/verilog/S_term_single_tile.v",
-        "dir::macros/verilog/W_IO_tile.v"
+        "dir::macros/verilog/W_IO_tile.v",
+        "dir::../../verilog/rtl/Config.v"
     ],
     "EXTRA_LEFS": [
         "dir::macros/lef/E_IO.lef",
@@ -97,7 +95,8 @@
         "dir::macros/lef/RegFile.lef",
         "dir::macros/lef/S_term_single2.lef",
         "dir::macros/lef/S_term_single.lef",
-        "dir::macros/lef/W_IO.lef"
+        "dir::macros/lef/W_IO.lef",
+        "dir::../../lef/Config.lef"
     ],
     "EXTRA_GDS_FILES": [
         "dir::macros/gds/E_IO.gds",
@@ -107,7 +106,8 @@
         "dir::macros/gds/RegFile.gds",
         "dir::macros/gds/S_term_single2.gds",
         "dir::macros/gds/S_term_single.gds",
-        "dir::macros/gds/W_IO.gds"
+        "dir::macros/gds/W_IO.gds",
+        "dir::../../gds/Config.gds"
     ],
     "FP_PDN_CHECK_NODES": 0,
     "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
@@ -150,7 +150,7 @@
     "PL_TARGET_DENSITY": 0.45,
     "PL_ROUTABILITY_DRIVEN": 1,
     "PL_SKIP_INITIAL_PLACEMENT": 1,
-    "PL_MACRO_CHANNEL_WIDTH": 40,
+    "PL_MACRO_CHANNEL_WIDTH": 30,
     "CTS_TARGET_SKEW": 200,
     "CTS_SINK_CLUSTERING_SIZE": 100,
     "CTS_SINK_CLUSTERING_SIZE": 1000,
