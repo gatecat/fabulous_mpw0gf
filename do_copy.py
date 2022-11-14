@@ -1,9 +1,46 @@
+# SPDX-FileCopyrightText: 2022 Myrtle Shah
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+
 import sys, os, shutil
 import pathlib
 
+spdx_header = """// SPDX-FileCopyrightText: 
+// 2022 Nguyen Dao
+// 2022 Myrtle Shah
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// SPDX-License-Identifier: Apache-2.0
+"""
+
 def copy_verilog(src):
-    # TODO: add spdx header?
-    shutil.copy(src, "./verilog/rtl")
+    with open(src, "r") as input_f:
+        with open(f"./verilog/rtl/{os.path.basename(src)}", "w") as output_f:
+            print(spdx_header, file=output_f)
+            output_f.write(input_f.read())
 
 def main():
     fab_root = f"{os.environ['HOME']}/FABulous_gf180"
