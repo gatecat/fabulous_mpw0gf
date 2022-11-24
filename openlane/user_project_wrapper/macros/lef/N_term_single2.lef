@@ -1175,7 +1175,7 @@ MACRO N_term_single2
         RECT 1.400 178.000 1.960 180.000 ;
     END
   END UserCLKo
-  PIN VDD
+  PIN vdd
     DIRECTION INOUT ;
     USE POWER ;
     PORT
@@ -1194,8 +1194,8 @@ MACRO N_term_single2
       LAYER Metal4 ;
         RECT 387.610 7.540 389.210 168.860 ;
     END
-  END VDD
-  PIN VSS
+  END vdd
+  PIN vss
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
@@ -1214,7 +1214,7 @@ MACRO N_term_single2
       LAYER Metal4 ;
         RECT 442.135 7.540 443.735 168.860 ;
     END
-  END VSS
+  END vss
   OBS
       LAYER Metal1 ;
         RECT 6.720 7.540 443.735 168.860 ;

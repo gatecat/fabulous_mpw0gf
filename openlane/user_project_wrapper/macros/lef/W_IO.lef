@@ -1351,46 +1351,6 @@ MACRO W_IO
         RECT 1.400 388.000 1.960 390.000 ;
     END
   END UserCLKo
-  PIN VDD
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER Metal4 ;
-        RECT 17.960 7.540 19.560 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 42.040 7.540 43.640 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 66.120 7.540 67.720 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 90.200 7.540 91.800 380.540 ;
-    END
-  END VDD
-  PIN VSS
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER Metal4 ;
-        RECT 30.000 7.540 31.600 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 54.080 7.540 55.680 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 78.160 7.540 79.760 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 102.240 7.540 103.840 380.540 ;
-    END
-  END VSS
   PIN W1END[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -1775,6 +1735,46 @@ MACRO W_IO
         RECT 108.000 234.360 110.000 234.920 ;
     END
   END WW4END[9]
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 17.960 7.540 19.560 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 42.040 7.540 43.640 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 66.120 7.540 67.720 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 90.200 7.540 91.800 380.540 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 30.000 7.540 31.600 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 54.080 7.540 55.680 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 78.160 7.540 79.760 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 102.240 7.540 103.840 380.540 ;
+    END
+  END vss
   OBS
       LAYER Metal1 ;
         RECT 6.720 4.070 109.670 381.210 ;

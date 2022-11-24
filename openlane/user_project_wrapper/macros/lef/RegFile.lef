@@ -3287,38 +3287,6 @@ MACRO RegFile
         RECT 373.240 388.000 373.800 390.000 ;
     END
   END UserCLKo
-  PIN VDD
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER Metal4 ;
-        RECT 22.240 7.540 23.840 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 175.840 7.540 177.440 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 329.440 7.540 331.040 380.540 ;
-    END
-  END VDD
-  PIN VSS
-    DIRECTION INOUT ;
-    USE GROUND ;
-    PORT
-      LAYER Metal4 ;
-        RECT 99.040 7.540 100.640 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 252.640 7.540 254.240 380.540 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 406.240 7.540 407.840 380.540 ;
-    END
-  END VSS
   PIN W1BEG[0]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
@@ -4087,6 +4055,38 @@ MACRO RegFile
         RECT 448.000 234.360 450.000 234.920 ;
     END
   END WW4END[9]
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 22.240 7.540 23.840 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 175.840 7.540 177.440 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 329.440 7.540 331.040 380.540 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 99.040 7.540 100.640 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 252.640 7.540 254.240 380.540 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 406.240 7.540 407.840 380.540 ;
+    END
+  END vss
   OBS
       LAYER Metal1 ;
         RECT 6.720 7.540 442.960 383.450 ;
