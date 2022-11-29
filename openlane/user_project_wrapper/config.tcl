@@ -131,13 +131,22 @@ set ::env(DIODE_INSERTION_STRATEGY) 4
 set ::env(GRT_ALLOW_CONGESTION) 1
 set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) 0
 
-set ::env(PL_MACRO_CHANNEL_WIDTH) 20
+# set ::env(PL_MACRO_CHANNEL_WIDTH) 20
+
+set ::env(PL_TARGET_DENSITY) 0.5
 
 set ::env(CTS_TARGET_SKEW) 200
 set ::env(CTS_SINK_CLUSTERING_SIZE) 100
 
 set ::env(VDD_NETS) [list {vdd}]
 set ::env(GND_NETS) [list {vss}]
+
+set ::env(CLOCK_PORT) {io_in[5]}
+set ::env(CLOCK_NET) {io_in[5]}
+set ::env(CLOCK_PERIOD) 100
+
+set ::env(PL_MAX_DISPLACEMENT_X) 1000
+set ::env(PL_MAX_DISPLACEMENT_Y) 1000
 
 # YOU ARE NOT ALLOWED TO CHANGE ANY VARIABLES DEFINED IN THE FIXED WRAPPER CFGS 
 source $::env(DESIGN_DIR)/fixed_dont_change/fixed_wrapper_cfgs.tcl
